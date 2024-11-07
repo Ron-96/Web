@@ -1,0 +1,140 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    color: #fff;
+    background-color: #111;
+}
+
+.hero {
+    position: relative;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.video-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: -1;
+}
+
+.video-background {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.hero-content {
+    text-align: center;
+    background: rgba(0, 0, 0, 0.6);
+    padding: 2rem;
+    border-radius: 10px;
+}
+
+.hero-title {
+    font-size: 3rem;
+    color: #ff0055;
+}
+
+.hero-subtitle {
+    font-size: 1.5rem;
+    color: #ddd;
+}
+
+/* Bio Section */
+.bio {
+    padding: 4rem 2rem;
+    background-color: #222;
+    text-align: center;
+}
+
+.bio h2 {
+    font-size: 2rem;
+    color: #ff0055;
+}
+
+.bio p {
+    color: #ddd;
+    font-size: 1rem;
+    margin-top: 1rem;
+}
+
+/* Track Section */
+.track-grid {
+    padding: 4rem 2rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 2rem;
+    background-color: #111;
+}
+
+.section-title {
+    grid-column: 1 / -1;
+    text-align: center;
+    font-size: 2rem;
+    color: #ff0055;
+    margin-bottom: 2rem;
+}
+
+.track-item {
+    background-color: #222;
+    padding: 1rem;
+    border-radius: 8px;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.track-item:hover {
+    transform: scale(1.05);
+}
+
+.track-image {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+}
+
+.track-title {
+    font-size: 1.2rem;
+    color: #ff0055;
+    margin-bottom: 0.5rem;
+}
+
+.track-length {
+    font-size: 1rem;
+    color: #aaa;
+    margin-bottom: 1rem;
+}
+
+.track-btn {
+    background-color: #ff0055;
+    color: #fff;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.track-btn:hover {
+    background-color: #ff3366;
+}
+
+.footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #111;
+    color: #555;
+    font-size: 0.9rem;
+}
